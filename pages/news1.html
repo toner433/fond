@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Дети Гаити в осаде</title>
+    <link rel="stylesheet" href="../styles/styles.css"> 
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="burger-menu" id="burger-menu">
+                <div class="burger-line"></div>
+                <div class="burger-line"></div>
+                <div class="burger-line"></div>
+            </div>
+
+
+            <ul id="nav-links">
+                <li><a href="../index.html">Главная</a></li>
+                <li><a href="../pages/about.html">О нас</a></li>
+                <li><a href="../pages/projects.html">Проекты</a></li>
+                <li><a href="../pages/team.html">Контакты</a></li> 
+                <div class="separator"></div>
+                <li><a href="../pages/donate.html" class="support-button">Поддержка</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <article id="news1">
+            
+            <img src="../assets/new1.jpg" alt="Описание картинки 1" style="width: 100%;">
+            <h2 style="font-size: 36px;">Дети Гаити в осаде: ошеломляющий рост жестокого обращения с детьми и вербовки их вооруженными группами</h2>
+            <p style="font-size: 24px;width: 100%; padding-left: 5%; max-width: 95%; overflow: auto; ">
+                ЖЕНЕВА, 7 февраля 2025 года. “Ошеломляющий 1000–процентный рост 
+                сексуального насилия в отношении детей на Гаити превратил их тела 
+                в поля сражений.<br>
+                <br>
+                10-кратный рост, зафиксированный с 2023 по прошлый год, связан с тем,
+                что вооруженные группировки причиняют невообразимые ужасы детям.<br>
+                <br>
+                "Почти столь же ошеломляющим является то, как мало внимания уделяется
+                этой ужасной статистике.<br>
+                <br>
+                И если цифры потеряли смысл, то, возможно, дети, пережившие этот ужас,
+                будут иметь значение.<br>
+                <br>                
+                "Розелине 16 лет. В конце прошлого года она вышла из дома своей 
+                подруги, чтобы пойти в магазин, и была похищена вооруженными людьми. 
+                Ее посадили в фургон вместе с другими молодыми девушками и 
+                отвезли на склад.<br>
+                Там ее сильно избили. Затем ее накачали наркотиками и в течение,
+                по ее мнению, месяца безжалостно насиловали.<br>
+                <br>
+                Когда вооруженная группа поняла, что за Розелин некому заплатить 
+                выкуп, она была освобождена. <br>
+                <br>
+                В настоящее время она находится в безопасном доме, поддерживаемом ЮНИСЕФ, 
+                вместе с более чем десятком других девочек, которые получают уход.</p>
+            
+                <section class="donation-section">
+                    <h2 class="donation-title">Сделайте пожертвование</h2>
+                    <p class="donation-text">Ваше пожертвование поможет тем, кто в этом нуждается. Выберите сумму и метод оплаты.</p>
+                    
+                    <form id="donation-form" class="donation-form">
+                        <label for="amount" class="donation-label">Сумма (₽):</label>
+                        <input type="number" id="amount" name="amount" class="donation-input" min="50" required placeholder="Введите сумму">
+                        
+                        <label for="payment-method" class="donation-label">Метод оплаты:</label>
+                        <select id="payment-method" name="payment-method" class="donation-select" required>
+                            <option value="card">Банковская карта</option>
+                            <option value="paypal">PayPal</option>
+                            <option value="yoomoney">ЮMoney</option>
+                            <option value="crypto">Криптовалюта</option>
+                        </select>
+            
+                        <button type="submit" class="donation-button">Сделать пожертвование</button>
+                    </form>
+                </section>
+            
+        </article>
+
+    
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Ваш Фонд. Все права защищены.</p>
+    </footer>
+    <script src="../scripts/burger-menu.js"></script>
+</body>
+</html>

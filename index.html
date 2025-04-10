@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Моя страница</title>
+    <link rel="stylesheet" href="styles/styles.css">
+
+
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="burger-menu" id="burger-menu">
+                <div class="burger-line"></div>
+                <div class="burger-line"></div>
+                <div class="burger-line"></div>
+            </div>
+
+
+            <ul id="nav-links">
+                <li><a href="pages/about.html">О нас</a></li>
+                <li><a href="pages/projects.html">Проекты</a></li>
+                <li><a href="pages/team.html">Контакты</a></li> 
+                <div class="separator"></div>
+                <li><a href="pages/donate.html" class="support-button">Поддержка</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <img src="assets/dawn.jpg" alt="Лого" style="width: 100%; max-width: 1920px; height: auto; display: block; margin: 20px auto;">
+        
+        <h2 style="margin-top: 80px; font-size: 36px;">Новости</h2>
+        
+        <div class="news-section">
+            <div class="news-card">
+                <a href="pages/news1.html">
+                    <img src="assets/new1.jpg" alt="Новость 1">
+                    <div class="news-card-content">
+                        <h3>Дети Гаити в осаде</h3>
+                        <p>Ошеломляющий рост жестокого обращения с детьми и вербовки их вооруженными группами</p>
+                    </div>
+                </a>
+            </div>
+            <div class="news-card">
+                <a href="pages/news2.html">
+                    <img src="assets/new2.jpg" alt="Новость 2">
+                    <div class="news-card-content">
+                        <h3>Заявление регионального директора ЮНИСЕФ</h3>
+                        <p>Эдуард Бегбедер рассказал о жертвах среди детей на Западном берегу</p>
+                    </div>
+                </a>
+            </div>
+            <div class="news-card">
+                <a href="pages/news3.html">
+                    <img src="assets/new3.jpg" alt="Новость 3">
+                    <div class="news-card-content">
+                        <h3>Дети в Газе нуждаются в поддержке</h3>
+                        <p>Война в секторе Газа привела к невообразимым потерям среди детей</p>
+                    </div>
+                </a>
+            </div>
+            <div class="news-card">
+                <a href="pages/news4.html">
+                    <img src="assets/new4.jpg" alt="Новость 4">
+                    <div class="news-card-content">
+                        <h3>Реагирование на чрезвычайные ситуации в Судане</h3>
+                        <p> В апреле 2023 года в столице Судана Хартуме вспыхнули ожесточенные бои</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <section class="subscribe-form">
+            <div class="subscribe-form">
+                <div class="form-content">
+                    <h2>Подпишитесь на новости</h2>
+                    <form>
+                        <input type="text" placeholder="Ваше имя" required>
+                        <input type="email" placeholder="Ваш email" required>
+                        <input type="tel" placeholder="Ваш номер телефона" required>
+                        <button type="submit">Подписаться</button>
+                    </form>
+                </div>
+                <div class="info-text">
+                    <p>Нам очень важно, чтобы люди следили за обновлениями на нашем сайте. Подписывайтесь на наши новости, чтобы быть в курсе всех событий!</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    
+    <footer>
+        <p>&copy; 2025 Благотворительная Организация. Все права защищены.</p>
+    </footer>
+    <script src="scripts/burger-menu.js"></script>
+</body>
+</html>

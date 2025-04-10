@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Дети Гаити в осаде</title>
+    <link rel="stylesheet" href="../styles/styles.css"> 
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="burger-menu" id="burger-menu">
+                <div class="burger-line"></div>
+                <div class="burger-line"></div>
+                <div class="burger-line"></div>
+            </div>
+
+
+            <ul id="nav-links">
+                <li><a href="../index.html">Главная</a></li>
+                <li><a href="../pages/about.html">О нас</a></li>
+                <li><a href="../pages/projects.html">Проекты</a></li>
+                <li><a href="../pages/team.html">Контакты</a></li> 
+                <div class="separator"></div>
+                <li><a href="../pages/donate.html" class="support-button">Поддержка</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <article id="news2">
+            <img src="../assets/new2.jpg" alt="Ребенок с Востока" style="width: 100%;">
+            <h2 style="font-size: 36px;">Заявление регионального директора ЮНИСЕФ по Ближнему Востоку и Северной Африке Эдуарда Бегбедера о жертвах среди детей на Западном берегу</h2>
+
+            <p style="font-size: 24px; padding-left: 5%; width: 95%; max-width: 100%; overflow: auto; ">
+                АММАН, 12 февраля 2025 года – “Насилие, связанное с конфликтом,
+                продолжает приносить смерть и страх гражданскому населению,
+                включая женщин и детей, на Западном берегу.<br>
+                <br>
+                7 февраля 10-летний палестинский мальчик скончался от полученных 
+                ранений после того, как, по сообщениям, был застрелен, а два дня 
+                спустя в результате другого трагического события в лагере Нур-Шамс,
+                 по сообщениям, была застрелена восьмимесячная беременная женщина 
+                 вместе со своим нерожденным ребенком.<br>
+                <br>
+                “За первые два месяца 2025 года на Западном берегу было убито 
+                в общей сложности 13 палестинских детей. Это число включает 
+                семерых детей, убитых с 19 января, после начала крупномасштабной 
+                операции на севере территории. Среди пострадавших - ребенок двух 
+                с половиной лет, беременная мать которого также была ранена в 
+                результате стрельбы."<br>
+                <br>
+                “С 7 октября 2023 года на Западном берегу, включая Восточный Иерусалим, 
+                были убиты 195 палестинских детей и трое израильских детей.<br>
+                За последние 16 лет число палестинских детей, убитых на территории, 
+                увеличилось на 200 процентов.<br>
+
+                </p>
+            
+                <section class="donation-section">
+                    <h2 class="donation-title">Сделайте пожертвование</h2>
+                    <p class="donation-text">Ваше пожертвование поможет тем, кто в этом нуждается. Выберите сумму и метод оплаты.</p>
+                    
+                    <form id="donation-form" class="donation-form">
+                        <label for="amount" class="donation-label">Сумма (₽):</label>
+                        <input type="number" id="amount" name="amount" class="donation-input" min="50" required placeholder="Введите сумму">
+                        
+                        <label for="payment-method" class="donation-label">Метод оплаты:</label>
+                        <select id="payment-method" name="payment-method" class="donation-select" required>
+                            <option value="card">Банковская карта</option>
+                            <option value="paypal">PayPal</option>
+                            <option value="yoomoney">ЮMoney</option>
+                            <option value="crypto">Криптовалюта</option>
+                        </select>
+            
+                        <button type="submit" class="donation-button">Сделать пожертвование</button>
+                    </form>
+                </section>
+        </article>
+
+    
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Ваш Фонд. Все права защищены.</p>
+    </footer>
+    <script src="../scripts/burger-menu.js"></script>
+</body>
+</html>

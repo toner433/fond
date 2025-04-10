@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <title>Пожертвования</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="burger-menu" id="burger-menu">
+                <div class="burger-line"></div>
+                <div class="burger-line"></div>
+                <div class="burger-line"></div>
+            </div>
+            
+            <ul id="nav-links">
+                <li><a href="../index.html">Главная</a></li>
+                <li><a href="../pages/about.html">О нас</a></li>
+                <li><a href="../pages/projects.html">Проекты</a></li>
+                <li><a href="../pages/team.html">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="donation-section">
+        <h2 class="donation-title">Сделайте пожертвование</h2>
+        <p class="donation-text">Ваше пожертвование поможет тем, кто в этом нуждается. Выберите сумму и метод оплаты.</p>
+        
+        <form id="donation-form" class="donation-form">
+            <label for="amount" class="donation-label">Сумма (₽):</label>
+            <input type="number" id="amount" name="amount" class="donation-input" min="50" required placeholder="Введите сумму">
+            
+            <label for="payment-method" class="donation-label">Метод оплаты:</label>
+            <select id="payment-method" name="payment-method" class="donation-select" required>
+                <option value="card">Банковская карта</option>
+                <option value="paypal">PayPal</option>
+                <option value="yoomoney">ЮMoney</option>
+                <option value="crypto">Криптовалюта</option>
+            </select>
+
+            <button type="submit" class="donation-button">Сделать пожертвование</button>
+        </form>
+    </section>
+
+
+    <footer>
+        <p>&copy; 2025 Благотворительная Организация. Все права защищены.</p>
+    </footer>
+
+    <script>
+        document.getElementById("donation-form").addEventListener("submit", function(event) {
+            event.preventDefault();
+            const amount = document.getElementById("amount").value;
+            const method = document.getElementById("payment-method").value;
+
+            if (amount < 50) {
+                alert("Минимальная сумма пожертвования - 50 ₽");
+            } else {
+                alert(`Спасибо за пожертвование в размере ${amount} ₽ с помощью ${method}!`);
+            }
+        });
+    </script>
+
+<script src="../scripts/burger-menu.js"></script>
+</body>
+</html>

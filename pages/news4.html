@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Дети Гаити в осаде</title>
+    <link rel="stylesheet" href="../styles/styles.css"> 
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="burger-menu" id="burger-menu">
+                <div class="burger-line"></div>
+                <div class="burger-line"></div>
+                <div class="burger-line"></div>
+            </div>
+            <ul id="nav-links">
+                <li><a href="../index.html">Главная</a></li>
+                <li><a href="../pages/about.html">О нас</a></li>
+                <li><a href="../pages/projects.html">Проекты</a></li>
+                <li><a href="../pages/team.html">Контакты</a></li> 
+                <div class="separator"></div>
+                <li><a href="../pages/donate.html" class="support-button">Поддержка</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+            
+            <img src="../assets/new4.jpg" alt="Ситуция в Судане" style="width: 100%;">
+            <h2>Реагирование на чрезвычайные ситуации в Судане</h2>
+            <section class="donation-section">
+                <h2 class="donation-title">Сделайте пожертвование</h2>
+                <p class="donation-text">Ваше пожертвование поможет тем, кто в этом нуждается. Выберите сумму и метод оплаты.</p>
+                
+                <form id="donation-form" class="donation-form">
+                    <label for="amount" class="donation-label">Сумма (₽):</label>
+                    <input type="number" id="amount" name="amount" class="donation-input" min="50" required placeholder="Введите сумму">
+                    
+                    <label for="payment-method" class="donation-label">Метод оплаты:</label>
+                    <select id="payment-method" name="payment-method" class="donation-select" required>
+                        <option value="card">Банковская карта</option>
+                        <option value="paypal">PayPal</option>
+                        <option value="yoomoney">ЮMoney</option>
+                        <option value="crypto">Криптовалюта</option>
+                    </select>
+        
+                    <button type="submit" class="donation-button">Сделать пожертвование</button>
+                </form>
+            </section>
+
+            <p style="font-size: 24px;padding-left: 5%; max-width: 95%; overflow: auto; ">
+                В апреле 2023 года в столице Судана Хартуме вспыхнули ожесточенные бои,
+                которые быстро распространились по всей стране. Более года 
+                спустя конфликт продолжает угрожать здоровью и благополучию 
+                24 миллионов детей в Судане, усугубляя трудности, с которыми 
+                сталкиваются и без того уязвимые семьи.<br>
+                <br>
+                Перемещение населения, вспышки болезней, голод и ограниченный 
+                гуманитарный доступ создают смертельную угрозу для вызванного 
+                конфликтом голода и катастрофической гибели детей. 
+                Ситуация особенно тяжелая для детей и семей, оказавшихся в районах, 
+                непосредственно затронутых конфликтом, в условиях отсутствия 
+                безопасности и риска для защиты.<br>
+                <br>
+                Гражданская инфраструктура по всему Судану была разрушена, 
+                в результате чего дети и общины остались без таких 
+                необходимых услуг, как чистая вода и базовое медицинское обслуживание.<br>
+                <br>
+                Между тем, потеря семейного дохода и социально-экономические 
+                последствия войны пагубно сказываются на благополучии детей, 
+                лишая их жизненно важных ресурсов и возможностей для обеспечения 
+                своего будущего.</p>
+            
+           
+
+    
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Ваш Фонд. Все права защищены.</p>
+    </footer>
+    <script src="../scripts/burger-menu.js"></script>
+</body>
+</html>
